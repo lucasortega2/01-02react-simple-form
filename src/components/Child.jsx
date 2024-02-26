@@ -1,7 +1,9 @@
 const Child = ({ changeParentValue }) => {
   return (
-    <div>
-      <button onClick={changeParentValue}>Change Parent Data</button>
+    <div className="button">
+      <button onClick={() => changeParentValue("Hello From Child")}>
+        Change Parent Data
+      </button>
     </div>
   );
 };
